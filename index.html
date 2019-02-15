@@ -1,8 +1,404 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>TEST PAGE</title>
-	</head>
-	<body>
-  </body>
-  </html>
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>LEGACY HOMES INTL.</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="App/Scripts/appsrc/feature.js"></script>
+    <link rel="shortcut icon" href="App/Img/legacyhomesint_1ag_icon.ico" type="image/x-icon" />
+
+    <style>
+
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            font-size: 15px;
+            color: white;
+        }
+
+        .logosmall {
+            background: url(App/Img/LegacyHomesInt.svg) no-repeat top left;
+            width: 218px;
+            height: 218px;
+            margin-right:20px;
+        }
+
+        .logolarge {
+            background: url(App/Img/Footer.svg) no-repeat top left;
+            width: 250px;
+            height: 250px;
+            margin-left:30px;
+        }
+
+        .strip {
+            background: no-repeat top left;
+            width: 100%;
+            height: auto;
+            align-content: center;
+        }
+
+        .adress {
+            list-style: none;
+        }
+
+        .item h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            font-style: italic;
+            margin: 70px 0;
+        }
+
+        .item span {
+            font-style: normal;
+        }
+
+        .slideanim {
+            visibility: hidden;
+        }
+
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+
+
+        .dropdown:hover > .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown > .dropdown-toggle:active {
+            /*Without this, clicking will make it sticky*/
+            pointer-events: none;
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .main-nav > li > a > .pipes {
+            border-left: 1px solid #000000;
+            padding-right:12px;
+            padding-left: 12px;
+            margin-left: -10px;
+        }
+
+        .main-nav > li:last-child > a {
+            border: 2px solid black;
+        }
+
+        .main-nav * {
+            font-size: 18px!important;
+            font-weight: 501;
+        }
+
+            @keyframes slide {
+                0% {
+                    opacity: 0;
+                    transform: translateY(70%);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0%);
+                }
+            }
+
+        #topnav {
+            background-color: white; 
+            opacity: 1.0;
+            filter: (opacity=50);
+        }
+        .container {
+            position: relative;
+            height: 118px;
+            margin: 0 auto;
+            padding: 0px 120px;
+            clear: both;
+            font-size: 18px !important;
+        }
+
+
+        .scrolltop {
+            display: none;
+            width: 100%;
+            margin: 0 auto;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .scroll {
+            position: relative;
+            right: 20px;
+            bottom: 10px;
+            background: #4d555a;
+            padding: 20px;
+            text-align: center;
+            margin: 0 0 0 0;
+            cursor: pointer;
+            transition: 0.5s;
+            -moz-transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+        }
+
+        .scroll:hover {
+            background: rgba(178,178,178,1.0);
+            transition: 0.5s;
+            -moz-transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+        }
+
+        .scroll:hover .fa {
+            padding-top: -10px;
+        }
+
+        .scroll .fa {
+            font-size: 30px;
+            margin-top: -5px;
+            transition: 0.5s;
+            -moz-transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+            margin-right: 5px;
+            color: #b9c2c8;
+        }
+        @-webkit-keyframes slide {
+            0% {
+                    opacity: 0;
+                    -webkit-transform: translateY(70%);
+                }
+
+                100% {
+                    opacity: 1;
+                    -webkit-transform: translateY(0%);
+                }
+            }
+    </style>
+</head>
+<body id="launch" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--NAV START-->
+    <nav id="topnav" class="navbar navbar-expand-sm navbar-light sticky-top" data-toggle="affix">
+        <div class="container mx-auto d-sm-flex d-block flex-sm-nowrap">
+            <a href="#">
+                <img class="logosmall" src="data:image/gif;base64,R0lGODlhAQABAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAABAAEAAAgEAP8FBAA7">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#launchbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="launchbar">
+                <ul class="navbar-nav main-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Mision</a>
+                            <a class="dropdown-item" href="#">Vision</a>
+                            <a class="dropdown-item" href="#">WHAT WE DO</a>
+                            <a class="dropdown-item" href="#">WHO WE ARE</a>
+                            <a class="dropdown-item" href="#">Client Appriciations</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#listing"><span class="pipes">Listing</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#buyer"><span class="pipes">Buyers</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seller"><span class="pipes">Sellers</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#construction"><span class="pipes">New Construction</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactform"><span class="pipes">Get in touch</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div style="padding-right:40px;">
+            <ul class="nav navbar-nav ml-auto">
+                <li>
+                    <a href="#" class="nav-link"><i class="fa fa-facebook fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"><i class="fa fa-google-plus fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"><i class="fa fa-pinterest fa-lg"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!--NAV END-->
+    <!--Container start-->
+
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+    <div id="listing" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+    <div id="buyer" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+    <div id="seller" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+    <div id="construction" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+    <div id="contactform" class="container-fluid slideanim">
+        <h4>Contact Form</h4>
+        <div class="row">
+            <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+            <div class="col-sm-12 form-group">
+                <button class="btn btn-default pull-right" type="submit">Send</button>
+            </div>
+        </div>
+    </div>
+    <!--Container END -->
+    <footer id="sitefooter" style="background-color:#6b8795;border-top:1px solid black;">
+        <div class="d-flex flex-row mb-4">
+            <div class="p-2 flex-fill">
+                    <a href="#">
+                        <img class="logolarge" src="data:image/gif;base64,R0lGODlhAQABAPcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAP8ALAAAAAABAAEAAAgEAP8FBAA7">
+                    </a>
+            </div>
+            <div class="p-2  flex-fill" style="margin-top:20px;">
+                    <span style="color:#ff9800; font-size:15px;">Adress</span><br/>
+                    <p style="color:white; font-size:15px;">Lorem ipsum dolor sit amet, vero omnis vocibus</p>
+                    <p style="color:white; font-size:15px;">+XX XXXX XXXXX</p>
+                    <p style="color:white; font-size:15px;">info@gmail.com</p>
+            </div>
+            <div class="p-2 flex-shrink-2" style="margin-top:20px;">
+                <span style="color:#ff9800; font-size:15px;">Testimonials</span>
+                <div id="demo" class="carousel slide text-center" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                </div>
+            </div>
+            <div class="p-2 flex-fill" style="margin-top:20px;">
+                    <span style="color:#ff9800; font-size:15px;">Picture</span>
+                    <div id="demo1" class="carousel slide text-center" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo1" data-slide-to="1"></li>
+                            <li data-target="#demo1" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="logo" src="App/Img/LegacyHomesInt.svg" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="logo" src="App/Img/LegacyHomesInt.svg" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="logo" src="App/Img/LegacyHomesInt.svg" />
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo1" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div> 
+            </div>
+        </div>
+        <div class="d-flex flex-row mb-2">
+            <div class="p-2 flex-fill">
+                    <p style="color:white; font-size:15px;text-align:center">©2019 Copyright Text </p>
+            </div>
+            <div class='scroll icon'><a href='#launch' title="Scroll to top">
+                <i class="fa fa-4x fa-angle-up"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

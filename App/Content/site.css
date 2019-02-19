@@ -202,7 +202,8 @@ h4 {
         border-radius: 50%;
     }
  .carousel .testimonial {
-        padding: 30px 0 10px;
+        padding: 10px 30px 50px 30px;
+        
     }
     .carousel .overview {	
         font-style: italic;
@@ -210,11 +211,14 @@ h4 {
     .carousel .overview b {
         text-transform: uppercase;
         color: orangered;
+        
     }
     
     .carousel .carousel-indicators {
         bottom: -30px;
     }
+
+    
 
     .carousel-indicators li, .carousel-indicators li.active {
         width: 10px;
@@ -223,19 +227,20 @@ h4 {
         border-radius: 50%;
     }
 
-
-    .carousel .carousel-control {
-        width: 40px;
-        height: 40px;
-        margin-top: -20px;
-        top: 50%;
-        background: none;
+    .carousel-control-prev,
+    .carousel-control-next {
+      height: 30px;
+      width: 30px;
+      outline: black;
+      border: 0 none;
+      border-radius: 50%;
+      border: 1px solid black;
+      background-image: none;
+      filter: invert(100%);
+      background: #1b1b1b none repeat scroll 0 0;
+      opacity: 0.5;
+      line-height: 70px;
+      top:40%;
     }
-    .carousel-control i {
-    font-size: 30px;
-	line-height: 42px;
-    position: absolute;
-    display: inline-block;
-	color: rgba(0, 0, 0, 0.8);
-    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
-}
+    
+    

@@ -103,7 +103,7 @@
 
     <div id="about" class="container-fluid">
         <div class="row">
-            <div class="col-sm-12 bgImg">
+            <div class="col-md-12 bgImg">
                 <div class="landingdiv">
                     <span class="landingtext">WELCOME TO LEGACY HOMES INTL.</span>
                 </div>
@@ -138,25 +138,48 @@
             </div>
         </div>
     </div>
-    <div id="contactform" class="container-fluid slideanim">
-        <h4>Contact Form</h4>
-        <div class="row">
-            <div class="col-sm-6 form-group">
-                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-            </div>
-            <div class="col-sm-6 form-group">
-                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-            </div>
-        </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-        <div class="row">
-            <div class="col-sm-12 form-group">
-                <button class="btn btn-default pull-right" type="submit">Send</button>
-            </div>
-        </div>
+    <div id="contactform" class="container-fluid slideanim frmcontainer">
+            <form name="qryform" id="qryform" method="post" action="" onsubmit="" novalidate="novalidate">
+                    <div class="row">
+                        <div class="form-group col-xs-6 col-sm-6 col-md-6 required">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" id="firstname" name="firstname" data-error="This value is required.">
+                                <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-6 col-md-6 required">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" data-error="This value is required.">
+                                <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xs-6 col-sm-6 col-md-6 required">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" id="lastname" name="lastname" data-error="This value is required.">
+                                <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group col-xs-6 col-sm-6 col-md-6 required">
+                            <label>Phone Number</label>
+                            <input type="text" class="form-control phone-format" maxlength="10" id="phone" name="phone" data-error="This value is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-12 col-md-12 required">
+                                <label>Comments/Questions</label>
+                                <textarea name="issues" rows="7" class="form-control" hei id="iq" data-error="This value is required."></textarea>
+                                <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="row col-sm-12 col-md-12">
+                        <div class="col text-right">
+                            <button type="submit" class="btn btn-default btnformat">Send Message</button>
+                        </div>
+                    </div>
+                </form>
     </div>
     <!--Container END -->
-    <footer id="sitefooter" style="background-color:#6b8795;border-top:1px solid black;">
+    <footer id="sitefooter" class="container-fluid py-3" style="background-color:#6b8795;border-top:1px solid black;">
         <div class="d-flex flex-row mb-7">
             <div class="p-2 flex-fill">
                 <a href="#">
@@ -239,14 +262,16 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex flex-row mb-2">
+        <div class="d-flex flex-row">
             <div class="p-2 flex-fill">
                     <p style="color:white; font-size:15px;text-align:center">©2019 Copyright Text </p>
             </div>
-            <div class='scroll icon'><a href='#launch' title="Scroll to top">
-                <i class="fa fa-4x fa-angle-up"></i></a>
-            </div>
         </div>
     </footer>
+    <div class="scroll-top-wrapper ">
+        <span class="scroll-top-inner">
+            <i class="fa fa-4x fa-angle-up"></i>
+        </span>
+    </div>
 </body>
 </html>
